@@ -4,58 +4,74 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box;}
-
-.container {
-  position: relative;
-  width: 50%;
-  max-width: 300px;
+div.gallery {
+  border: 1px solid #ccc;
 }
 
-.image {
-  display: block;
-  width: 150;
-  height: 150;
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
   height: auto;
 }
 
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
+div.desc {
+  padding: 15px;
   text-align: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
   
 <body>
-  <p>
-    <a href="https://register.cpso.on.ca/Advanced-Search/" target="_blank">
-    <div class="container">
-      <img src="images/doctor.png" alt="doctor" class="image">
-      <div class="overlay">家庭医生</div>
-    </div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://register.cpso.on.ca/Advanced-Search/">
+      <img src="images/doctor.png" alt="doctor" width="150" height="150">
     </a>
-    <a href="https://bomingbaidental.com/our-team" target="_blank"
-    <div class="container">
-      <img src="images/dentist.png" alt="dentist" class="image">
-      <div class="overlay">牙医</div>
-    </div>
+    <div class="desc">家庭医生</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://bomingbaidental.com/our-team">
+      <img src="images/dentist.png" alt="doctor" width="150" height="150">
     </a>
+    <div class="desc">牙医</div>
+  </div>
+</div>
 <!--     <a href="https://register.cpso.on.ca/Advanced-Search/" target="_blank"><img src="images/doctor.png" alt="家庭医生" width="150" height="150"></a> -->
 <!--     <a href="https://bomingbaidental.com/our-team" target="_blank"><img src="images/dentist.png" alt="牙医" width="150" height="150"></a> -->
   </p> 
