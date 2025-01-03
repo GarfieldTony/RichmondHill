@@ -3,11 +3,67 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+  
 <body>
   <p>
-    <a href="https://register.cpso.on.ca/Advanced-Search/" target="_blank"><img src="images/doctor.png" alt="家庭医生" width="150" height="150"></a> 
-    <a href="https://bomingbaidental.com/our-team" target="_blank"><img src="images/dentist.png" alt="牙医" width="150" height="150"></a>
-  </p>
+    <div class="container">
+      <a href="https://register.cpso.on.ca/Advanced-Search/" target="_blank">
+      <img src="images/doctor.png" alt="doctor" class="image">
+      </a>
+      <div class="overlay">家庭医生</div>
+    </div>
+    <div class="container">
+      <a href="https://bomingbaidental.com/our-team" target="_blank"
+      <img src="images/dentist.png" alt="dentist" class="image">
+      </a>
+      <div class="overlay">牙医</div>
+    </div>
+<!--     <a href="https://register.cpso.on.ca/Advanced-Search/" target="_blank"><img src="images/doctor.png" alt="家庭医生" width="150" height="150"></a> -->
+<!--     <a href="https://bomingbaidental.com/our-team" target="_blank"><img src="images/dentist.png" alt="牙医" width="150" height="150"></a> -->
+  </p> 
   <br>
   <tr>
     <td>家庭医生</td>
