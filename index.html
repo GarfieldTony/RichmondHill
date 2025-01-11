@@ -2,8 +2,12 @@
 layout: default
 ---
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang }}">
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{% t site.description %}"/>
+    <meta name="keywords" content="{% t site.keywords %}"/>
+    <title>{% t site.name %}</title>
 <style>
 div.gallery {
   border: 1px solid #ccc;
@@ -60,7 +64,7 @@ div.desc {
     <a target="_blank" href="https://register.cpso.on.ca/Advanced-Search/">
       <img src="images/doctor.png" alt="doctor" width="150" height="100">
     </a>
-    <div class="desc">家庭医生</div>
+    <div class="desc">{% t main.doctor %}</div>
   </div>
 </div>
 
@@ -69,7 +73,7 @@ div.desc {
     <a target="_blank" href="https://bomingbaidental.com/our-team">
       <img src="images/dentist.png" alt="dentist" width="150" height="100">
     </a>
-    <div class="desc">牙医</div>
+    <div class="desc">{% t main.dentist %}</div>
   </div>
 </div>
 <!--     <a href="https://register.cpso.on.ca/Advanced-Search/" target="_blank"><img src="images/doctor.png" alt="家庭医生" width="150" height="150"></a> -->
@@ -79,7 +83,7 @@ div.desc {
     <a target="_blank" href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/law-society-referral-service">
       <img src="images/lawyer.png" alt="free lawyer" width="150" height="100">
     </a>
-    <div class="desc">免费律师咨询</div>
+    <div class="desc">{% t main.lsrs %}</div>
   </div>
 </div>
 
