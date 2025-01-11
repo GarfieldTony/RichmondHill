@@ -1,11 +1,19 @@
 site:
-  name: 列治文山黄页
-  tagline: 列治文山黄页
+  title: 列治文山黄页
   description: 列治文山周边地区黄页
-  keywords: 列治文山、惊人、周边地区
+  keywords: 列治文山, 黄页, 社区
 
 main:
-  welcomeSection:
-    anchor: 欢迎
-    heading: 欢迎来到这个奇妙的网站。
-    p1: 成千上万的人对这个网站感到惊叹。你呢？
+  doctor: 家庭医生
+  dentist: 牙医
+  lsrs: 免费律师咨询
+  cicc: 移民留学律师
+  lawyer-directory: 律师查询
+  esa: 持牌电工查询
+  mortgage-cal: 贷款计算器
+  what-goes-where: 垃圾分类查询
+  waste-cal: 收垃圾日历
+  water: 水费网站
+  alectra: 电费网站
+  enbridge: 气费网站
+  mpac: 了解你的房子
