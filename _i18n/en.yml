@@ -1,0 +1,11 @@
+site:
+  name: Richmond Hill Yellow Page
+  tagline: Richmond Hill Yellow Page
+  description: Richmond Hill Yellow Page for its neibourhood
+  keywords: richmond hill, amazing, neibourhood
+
+main:
+  welcomeSection:
+    anchor: welcome
+    heading: Welcome to this marvelous webseite.
+    p1: Hundreds of thousands of people are amazed by this site. Are you?
