@@ -1,11 +1,19 @@
 site:
-  name: Richmond Hill Yellow Page
-  tagline: Richmond Hill Yellow Page
+  title: Richmond Hill Yellow Page
   description: Richmond Hill Yellow Page for its neibourhood
-  keywords: richmond hill, amazing, neibourhood
+  keywords: richmond hill, yellow page, neibourhood
 
 main:
-  welcomeSection:
-    anchor: welcome
-    heading: Welcome to this marvelous webseite.
-    p1: Hundreds of thousands of people are amazed by this site. Are you?
+  doctor: Family Doctor
+  dentist: Dentist
+  lsrs: Law Society Referral Service
+  cicc: Immigration Lawyer
+  lawyer-directory: Lawyer Directory
+  esa: Registered Electrican
+  mortgage-cal: Mortgage Calculator
+  what-goes-where: What Goes Where
+  waste-cal: Waste Calender
+  water: Water Portal
+  alectra: Electrial Portal
+  enbridge: Gas Portal
+  mpac: House Management
