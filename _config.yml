@@ -1,3 +1,10 @@
 theme: jekyll-theme-architect
 title: Richmond Hill Yellow Page
 description: Serve Richmond Hill neibourhood
+url: 
+languages: ["en", "cn"]
+exclude_from_localizations: ["images"]
+defaultLang: en
+languageNames:
+  cn: Chinese
+  en: English
