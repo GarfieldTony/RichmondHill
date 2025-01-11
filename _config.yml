@@ -1,10 +1,13 @@
+plugins:
+  - jekyll-multiple-languages-plugin
+languages: ["en", "cn"]
+languageNames:
+  cn: Chinese
+  en: English
+defaultLang: en
+exclude_from_localizations: ["javascript", "images", "css"]
+
 theme: jekyll-theme-architect
 title: Richmond Hill Yellow Page
 description: Serve Richmond Hill neibourhood
 url: https://garfieldtony.github.io/RichmondHill/
-languages: ["en", "cn"]
-exclude_from_localizations: ["images"]
-defaultLang: en
-languageNames:
-  cn: Chinese
-  en: English

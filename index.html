@@ -92,7 +92,7 @@ div.desc {
     <a target="_blank" href="https://www.college-ic.ca/protecting-the-public/find-an-immigration-consultant">
       <img src="images/lawyer2.png" alt="immigrate lawyer" width="150" height="100">
     </a>
-    <div class="desc">移民留学律师</div>
+    <div class="desc">{% t main.cicc %}</div>
   </div>
 </div>
 
@@ -101,7 +101,7 @@ div.desc {
     <a target="_blank" href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/directory-search/results?fc=membercitynormalized%7CRichmond%20Hill">
       <img src="images/lawyer.png" alt="lawyer search" width="150" height="100">
     </a>
-    <div class="desc">律师查询</div>
+    <div class="desc">{% t main.lawyer-directory %}</div>
   </div>
 </div>
 
@@ -110,7 +110,7 @@ div.desc {
     <a target="_blank" href="https://findacontractor.esasafe.com/">
       <img src="images/esa.png" alt="registered electrician" width="150" height="100">
     </a>
-    <div class="desc">持牌电工查询</div>
+    <div class="desc">{% t main.esa %}</div>
   </div>
 </div>
   
@@ -120,7 +120,7 @@ div.desc {
     <a target="_blank" href="https://itools-ioutils.fcac-acfc.gc.ca/MC-CH/MCCalc-CHCalc-eng.aspx">
       <img src="images/mortgage.svg" alt="mortgage calculator" width="150" height="100">
     </a>
-    <div class="desc">贷款计算器</div>
+    <div class="desc">{% t main.mortgage-cal %}</div>
   </div>
 </div> 
 
@@ -129,7 +129,7 @@ div.desc {
     <a target="_blank" href="https://eservices.richmondhill.ca/whatgoeswhere/">
       <img src="images/whatgoeswhere.png" alt="what goes where" width="150" height="100">
     </a>
-    <div class="desc">垃圾分类查询</div>
+    <div class="desc">{% t main.what-goes-where %}</div>
   </div>
 </div> 
 
@@ -138,7 +138,7 @@ div.desc {
     <a target="_blank" href="https://www.richmondhill.ca/en/shared-content/resources/documents/2025-Waste-Management-Calendar.pdf">
       <img src="images/garbage.png" alt="garbage calendar" width="150" height="100">
     </a>
-    <div class="desc">收垃圾日历</div>
+    <div class="desc">{% t main.waste-cal %}</div>
   </div>
 </div> 
 
@@ -147,7 +147,7 @@ div.desc {
     <a target="_blank" href="https://waterbill.richmondhill.ca/app/login.jsp">
       <img src="images/water.png" alt="water" width="150" height="100">
     </a>
-    <div class="desc">水费网站</div>
+    <div class="desc">{% t main.water %}</div>
   </div>
 </div> 
 
@@ -156,7 +156,7 @@ div.desc {
     <a target="_blank" href="https://myalectra.alectrautilities.com/portal/#/login">
       <img src="images/alectra.png" alt="alectra" width="150" height="100">
     </a>
-    <div class="desc">电费网站</div>
+    <div class="desc">{% t main.alectra %}</div>
   </div>
 </div> 
 
@@ -165,7 +165,7 @@ div.desc {
     <a target="_blank" href="https://myaccount.enbridgegas.com/">
       <img src="images/enbridge.png" alt="enbridge" width="150" height="100">
     </a>
-    <div class="desc">气费网站</div>
+    <div class="desc">{% t main.enbridge %}</div>
   </div>
 </div> 
 
@@ -174,7 +174,7 @@ div.desc {
     <a target="_blank" href="https://www.mpac.ca">
       <img src="images/mpac.png" alt="mpac" width="150" height="100">
     </a>
-    <div class="desc">了解你的房子</div>
+    <div class="desc">{% t main.mpac %}</div>
   </div>
 </div> 
   
@@ -186,5 +186,18 @@ div.desc {
   <p>
     <a href="https://itools-ioutils.fcac-acfc.gc.ca/MC-CH/MCCalc-CHCalc-eng.aspx" target="_blank">贷款计算器</a>
   </p> -->
+
+  <footer>
+    <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
+    {% for lang in site.languageNames %}
+    {% if lang[0] == site.lang %} {% continue %} {% endif %}
+    {% if page.namespace %}
+    <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+    {% else %}
+    <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+    {% endif %}
+    {% endfor %}
+</footer>
+
 </body>
 </html>
